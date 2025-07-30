@@ -3,6 +3,8 @@ import Hero from "../../Components/Hero/Hero";
 import About from "../../Components/About/About";
 import Presence from "../../Components/Presence/Presence";
 import AboutPreview from "../../Components/About/AboutPreview";
+import ConnectWithUs from "../../Components/ConnectWithUs/ConnectWithUs";
+import Footer from "../../Components/Footer/Footer";
 
 const HomePage = () => {
   return (
@@ -19,6 +21,16 @@ const HomePage = () => {
       {/* <section id="presence">
         <Presence />
       </section> */}
+
+      <section id="connect">
+        <ConnectWithUs />
+      </section>
+
+      <footer>
+        <Footer />
+      </footer>
+
+
     </>
   );
 };
