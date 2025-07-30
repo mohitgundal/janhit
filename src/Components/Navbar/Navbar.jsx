@@ -19,14 +19,23 @@ const Navbar = () => {
       <img src={logo} alt="Janhit Logo" />
 
       <nav className={showMenu ? "menu-mobile": "menu-web"}>
-      <ul className="nav-menu">
+      {/* <ul className="nav-menu">
         <li><Link to="/home">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/products">Products</Link></li>
         <li><Link to="/presence">Presence</Link></li>
         <li><Link to="/business-opportunity">Business</Link></li>
         <li><Link to="/careers">Careers</Link></li>
-      </ul>
+      </ul> */}
+
+      <ul className="nav-menu">
+  <li><Link to="/home" onClick={() => setShowMenu(false)}>Home</Link></li>
+  <li><Link to="/about" onClick={() => setShowMenu(false)}>About</Link></li>
+  <li><Link to="/products" onClick={() => setShowMenu(false)}>Products</Link></li>
+  <li><Link to="/presence" onClick={() => setShowMenu(false)}>Presence</Link></li>
+  <li><Link to="/business-opportunity" onClick={() => setShowMenu(false)}>Business</Link></li>
+  <li><Link to="/careers" onClick={() => setShowMenu(false)}>Careers</Link></li>
+</ul>
       </nav>
 
       <div className="ham-menu">
