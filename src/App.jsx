@@ -35,7 +35,7 @@ const App = () => {
     });
   }, []);
   return (
-    <Router>
+    <Router basename="/janhit">
       {/* <ScrollToTop />
       <ScrollToHash/> */}
       <Navbar />
