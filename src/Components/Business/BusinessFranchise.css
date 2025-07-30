@@ -1,0 +1,91 @@
+.franchise-models {
+  padding: 80px 20px;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.franchise-models h2 {
+  font-size: 1.7rem;
+  margin-bottom: 50px;
+}
+
+.franchise-models .highlight {
+  font-size: 3.2rem;
+  color: #22c55e;
+}
+
+.model-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.model-card {
+  position: relative;
+  background: white;
+  border-radius: 16px;
+  padding: 40px 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  min-height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.model-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 30px rgba(34, 197, 94, 0.2);
+}
+
+/* ICON AND TITLE SECTION */
+.model-icon,
+.model-card h3 {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 2;
+}
+
+.model-icon {
+  font-size: 5rem;
+  color: #22c55e;
+  margin-bottom: 15px;
+}
+
+.model-card h3 {
+  font-size: 2rem;
+  color: #111827;
+}
+
+/* DESCRIPTION SECTION */
+.model-card p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #4b5563;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  z-index: 3;
+}
+
+/* ON HOVER: Hide icon and title, show paragraph */
+.model-card:hover .model-icon,
+.model-card:hover h3 {
+  opacity: 0;
+  transform: scale(0.95);
+  visibility: hidden;
+}
+
+.model-card:hover p {
+  opacity: 1;
+  visibility: visible;
+}

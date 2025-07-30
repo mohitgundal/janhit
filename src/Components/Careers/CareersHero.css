@@ -1,0 +1,254 @@
+.careers-hero {
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+}
+
+
+.careers-hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.careers-hero-img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.careers-hero-section{
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    width: 100%;
+    line-height: 2.6rem;
+    z-index: 2;
+}
+
+.careers-hero-section h1{
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+.careers-hero-section .highlight{
+    font-size: 4.5rem;
+    color: #22c55e;
+    font-weight: 900;
+}
+
+.careers-hero-section p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #ffffff;
+    /* line-height: 3.5rem; */
+}
+
+.careers-hero-section button{
+    margin-top: .5rem;
+    font-size: 1.2rem;
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: 0.5em;
+    color: #ffffff;
+    background-color: #22c55e;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.careers-hero-section button:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width: 360px){
+    .careers-hero{
+        width: 100%;
+        height: 60vh;
+        position: relative;
+    }
+
+    .careers-hero-img{
+        height: 60vh;
+    }
+
+    .careers-hero::before{
+        width: 100%;
+        height: 60vh;
+    }
+
+    .careers-hero-section{
+        position: absolute;
+        top: 20vh;
+    }
+    
+    .careers-hero-section h1{
+        font-size: 1.3rem;
+        line-height: 3rem;
+    }
+    
+    .careers-hero-section .highlight{
+        font-size: 3rem;
+        line-height: 1.5rem;
+    }
+    
+    .careers-hero-section p{
+        font-size: 1rem;
+        padding: 0 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 480px){
+
+    .careers-hero-section{
+        position: absolute;
+        top: 20;
+    }
+    
+    .careers-hero-section h1{
+        font-size: 1.3rem;
+        line-height: 3rem;
+    }
+    
+    .careers-hero-section .highlight{
+        font-size: 3rem;
+        line-height: 1.5rem;
+    }
+    
+    .careers-hero-section p{
+        font-size: 1rem;
+        padding: 0 1rem;
+        line-height: 1.5rem;
+    }
+
+    .careers-hero-section button{
+        font-size: 1rem;
+        padding: 0.5rem 1.2rem;
+    }
+}
+
+
+
+
+@media (max-width: 780px){
+
+    .careers-hero-section{
+        position: absolute;
+        top: 30vh;
+        line-height: 3rem;
+    }
+
+    .careers-hero-section h1{
+        font-size: 2rem;
+    }
+
+    .careers-hero-section .highlight{
+        font-size: 4rem;
+    }
+
+    .careers-hero-section p{
+        /* margin-top: 1rem; */
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    .careers-hero-section button{
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        padding: 0.7rem 2rem;
+    }
+}
+
+@media (max-width: 1024px){
+
+    .careers-hero{
+        width: 100%;
+        height: 90vh;
+        position: relative;
+    }
+
+    .careers-hero-img{
+        height: 90vh;
+    }
+
+    .careers-hero::before{
+        width: 100%;
+        height: 90vh;
+    }
+
+    .careers-hero-section{
+        position: absolute;
+        top: 20;
+        line-height: 3.5rem;
+    }
+
+    .careers-hero-section h1{
+        font-size: 2rem;
+    }
+
+    .careers-hero-section .highlight{
+        font-size: 5rem;
+    }
+
+    .careers-hero-section p{
+        padding: 0rem 1rem;
+        font-size: 1.8rem;
+    }
+
+    .careers-hero-section button{
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        padding: 1rem 2.5rem;
+    }
+}
+
+
+
+@media(max-width: 580px){
+    .careers-hero{
+        width: 100%;
+        height: 60vh;
+        position: relative;
+    }
+
+    .careers-hero-img{
+        height: 60vh;
+    }
+
+    .careers-hero::before{
+        width: 100%;
+        height: 60vh;
+    }
+
+    .careers-hero-section{
+        position: absolute;
+        top: 20vh;
+        line-height: 3rem;
+    }
+
+    .careers-hero-section h1{
+        font-size: 1.5rem;
+    }
+
+    .careers-hero-section .highlight{
+        font-size: 3rem;
+    }
+
+    .careers-hero-section p{
+        font-size: 1.3rem;
+    }
+
+    .careers-hero-section button{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        padding: 0.7rem 2rem;
+    }
+
+}

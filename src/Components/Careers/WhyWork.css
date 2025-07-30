@@ -1,0 +1,196 @@
+ .why-us {
+  width: 100%;
+  padding-top: 5rem;
+  height: 33rem;
+  /* padding: 4rem 2rem; */
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.why-us h2 {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.why-us .highlight {
+  font-size: 3rem;
+  color: #22c55e;
+  margin-bottom: 1rem;
+}
+
+.why-us p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.reasons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.reason-card {
+  flex: 1 1 250px;
+  background: white;
+  height: 15rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.reason-card:hover {
+  transform: translateY(-7px);
+}
+
+.reason-icon,
+.reason-card h3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.reason-card h3 {
+  color: #000;
+  margin-top: 1.5rem;
+}
+
+.reason-card p {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  color: #333;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 90%;
+}
+
+.reason-card:hover .reason-icon,
+.reason-card:hover h3 {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.reason-card:hover p {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.reason-icon {
+  font-size: 5.5rem;
+  color: #22c55e;
+  /* margin-top: 1rem; */
+}
+
+
+@media (max-width: 360px){
+  .why-us{
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+.reasons-container{
+  padding: 0rem 1rem;
+}
+
+
+  .reason-card{
+    /* width: 80%; */
+    margin: auto;
+  }
+
+  
+}
+@media (max-width: 480px){
+  .why-us{
+    height: auto;
+  }
+
+  .why-us p{
+    padding: 0rem 1rem;
+  }
+
+  .reasons-container{
+    padding: 0rem 1rem;
+  }
+
+  .reason-card{
+    /* padding: 1rem 1rem; */
+    margin: 1rem;
+  }
+}
+
+
+@media (max-width: 768px){
+
+  .why-us{
+    height: auto;
+  }
+
+  .reasons-container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .reason-card{
+    width: 80%;
+    margin: auto;
+  }
+}
+
+
+@media (max-width: 1024px){
+
+  .why-us{
+    height: auto;
+  }
+
+  .why-us h2{
+    font-size: 2rem;
+  }
+
+  .why-us .highlight{
+    font-size: 4.5rem;
+  }
+
+  .why-us p{
+    font-size: 1.8rem;
+    padding: 0rem 1rem;
+  }
+
+  .reasons-container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+  }
+
+  .reason-card{
+    width: 80%;
+    margin: auto;
+  }
+
+  .reason-card .reason-icon{
+    font-size: 6rem;
+  }
+
+  .reason-card h3{
+    font-size: 3rem;
+  }
+
+}
+
+
+

@@ -1,0 +1,57 @@
+.leadership-section {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.leadership-section h2 {
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+.leadership-section .highlight{
+  font-size: 3rem;
+  color: #22c55e;
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leader-card {
+  background: #f9fafb;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.leader-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(34, 197, 94, 0.2);
+}
+
+.leader-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 4px solid #22c55e;
+}
+
+.leader-title {
+  color: #4b5563;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.leader-quote {
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.6;
+}

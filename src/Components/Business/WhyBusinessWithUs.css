@@ -1,0 +1,97 @@
+.why-partner {
+  padding: 80px 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.why-partner h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #1f2937;
+  line-height: 45px;
+  cursor: default;
+}
+
+.why-partner .highlight {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #22c55e;
+}
+
+.reasons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.reason-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #e0f2f1;
+  border-radius: 16px;
+  padding: 35px 25px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(4px);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: 300px; /* ✅ Fix the height to avoid content shift */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure both views occupy the same space */
+.card-front,
+.card-back {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+  width: 90%;
+}
+
+.card-front {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.card-back {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* On hover: hide front, show back */
+.reason-card:hover .card-front,
+.reason-card:hover .icon {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.reason-card:hover .card-back {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Icon and highlight */
+.reason-card .icon {
+  font-size: 5rem;
+  color: #22c55e;
+  margin-bottom: 1rem;
+}
+
+.reason-card h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+

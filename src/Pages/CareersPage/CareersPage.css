@@ -1,0 +1,8 @@
+/* Careers Page Section Layout */
+.careers-page {
+  margin-top: 18vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}

@@ -1,0 +1,285 @@
+/* Wrapper container around everything (including buttons) */
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  margin-top: 17vh;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll buttons */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  /* background: none; */
+  color: white;
+  /* color: #000; */
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 18px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  opacity: 0.6;
+  width: 5rem;
+  height: 5rem;
+}
+
+.scroll-btn:hover {
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  background: #000;
+  color: #fff;
+  opacity: 1;
+}
+
+.scroll-btn.left {
+  left: 10px;
+}
+
+.scroll-btn.right {
+  right: 10px;
+}
+
+/* Scrollable horizontal slide area */
+.hero-wrapper {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+/* Hide horizontal scrollbar */
+.hero-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Each full-screen slide */
+.hero-section {
+  flex-shrink: 0;
+  width: 100vw;
+  height: 80vh;
+  scroll-snap-align: start;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* First slide image */
+.first-slide img,
+.second-slide img,
+.third-slide img,
+.fourth-slide img {
+  width: 100%;
+  /* height: 70vh; */
+  object-fit: cover;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+  /* object-position: top; */
+}
+
+.first-slide:hover img,
+.second-slide:hover img,
+.third-slide:hover img,
+.fourth-slide:hover img {
+  opacity: 0.4;
+}
+
+
+.first-slide:hover .first-slide-section,
+.second-slide:hover .second-slide-section,
+.third-slide:hover .third-slide-section,
+.fourth-slide:hover .fourth-slide-section{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.first-slide-section,
+.second-slide-section,
+.third-slide-section,
+.fourth-slide-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #000;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  cursor: pointer;
+  line-height: 50px;
+}
+
+.first-slide-section h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.first-slide-section .heading{
+  font-size: 80px;
+  font-weight: 900;
+  color: rgb(1, 114, 76);
+}
+
+.first-slide-section h5 {
+  line-height: 15px;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+/* .first-slide-section button {
+  margin-top: 25px;
+  font-size: 20px;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+} */
+
+.second-slide img,
+.third-slide img,
+.fourth-slide img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* Content overlay on second slide */
+.second-slide-section h1,
+/* .third-slide-section h1, */
+.fourth-slide-section h1{
+  font-size: 70px;
+  color: rgb(1, 114, 76);
+}
+
+.second-slide-section p,
+.third-slide-section p,
+.fourth-slide-section p{
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.first-slide-section button,
+.second-slide-section button,
+.third-slide-section button,
+.fourth-slide-section button{
+  margin-top: 25px;
+  font-size: 18px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
+  background: green;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.first-slide-section button:hover,
+.second-slide-section button:hover,
+.third-slide-section button:hover,
+.fourth-slide-section button:hover{
+  transform: scale(1.05);
+}
+
+.third-slide-section h1{
+  /* font-size: 20px; */
+  line-height: 35px;
+}
+
+.third-slide-section .career{
+  font-size: 70px;
+  color: rgb(1, 114, 76);
+  /* font-weight: 900; */
+}
+
+/* .third-slide-section p{
+  font-size: 18px;
+  line-height: 20px;
+} */
+
+
+
+@media screen and (max-width: 360px) {
+  
+  .hero-section .first-slide{
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .hero-section img{
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  
+  .hero-section .first-slide{
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .hero-section img{
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  
+  .hero-section .first-slide{
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .hero-section img{
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .scroll-btn{
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  
+  .hero-section .first-slide{
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .hero-section img{
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .scroll-btn{
+    width: 6rem;
+    height: 6rem;
+  }
+}

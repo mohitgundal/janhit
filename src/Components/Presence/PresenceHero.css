@@ -1,0 +1,179 @@
+.presence-hero-section {
+  margin-top: 18vh;
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.presence-bg-image {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.presence-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.presence-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* min-width: 40rem; */
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding: 0 2rem;
+}
+
+.presence-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #96e8b4;
+}
+
+.presence-content p {
+  font-size: 1.2rem;
+  max-width: 600p;
+  margin: 0 auto 2rem auto;
+  /* color: #000; */
+}
+
+.presence-button {
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  background-color: #22c55e;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.presence-button:hover {
+  background-color: #1ea44d;
+}
+
+
+
+@media (max-width: 360px){
+
+  .presence-hero-section{
+    height: 60vh;
+  }
+
+  .presence-content{
+    width: 100%;
+  }
+
+  .presence-content h1{
+    font-size: 3rem;
+    /* padding: 0.5rem; */
+    margin: 0;
+  }
+
+  .presence-content p{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0.5rem 1rem;
+  }
+
+  .presence-content button{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px){
+  .presence-hero-section{
+    /* width: 100%; */
+    height: 70vh;
+  }
+
+  .presence-content{
+    width: 100%;
+  }
+
+  .presence-content h1{
+    font-size: 2rem !important;
+    margin: 0 0 0.5rem;
+    padding: 0 0.4rem;
+  }
+
+  .presence-content p{
+    font-size: 1.5rem !important;
+    margin: 0 0 1rem;
+    padding: 0 1rem;
+  }
+
+  .presence-content button{
+    font-size: 1.2rem !important;
+    padding: 0.7rem 1.5rem !important;
+  }
+}
+
+/* Responsive (optional) */
+@media (max-width: 768px) {
+
+  .presence-content{
+    width: 100%;
+  }
+  .presence-content h1 {
+    padding: 0 1rem;
+    font-size: 3rem !important;
+  }
+
+  .presence-content p {
+    padding: 0 1rem;
+    font-size: 1.8rem !important;
+  }
+
+  .presence-button {
+    font-size: 1.3rem !important;
+    padding: 1rem 2rem !important;
+  }
+}
+
+@media (max-width: 1024px){
+
+  .presence-hero-section{
+    height: 75vh !important;
+  }
+
+  .presence-bg-image{
+    height: 75vh;
+  }
+
+  .presence-overlay{
+    height: 75vh;
+  }
+
+  .presence-content{
+    width: 100%;
+  }
+
+  .presence-content h1{
+    font-size: 4.5rem;
+    padding: 0 1rem;
+  }
+
+  .presence-content p{
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
+  .presence-content button{
+    font-size: 1.8rem;
+    padding: 1.3rem 3rem;
+  }
+}

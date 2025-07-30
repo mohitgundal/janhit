@@ -1,0 +1,142 @@
+.core-values-section {
+  padding: 4rem 2rem;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.core-values-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.core-values-section .highlight{
+  color: #22c55e;
+  font-size: 3rem;
+
+}
+
+.core-values-grid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.value-card {
+  cursor: default;
+  background: #ffffff;
+  min-height: 12rem;
+  /* padding: 2rem; */
+  padding: 0;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(34, 197, 94, 0.2);
+}
+
+.core-values-section .value-icon {
+  font-size: 3rem;
+  color: #22c55e;
+  margin-bottom: 1rem;
+  /* transition: 0.5s; */
+}
+
+.core-values-section .value-card h3 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.core-values-section .value-card p {
+  font-size: 1.8rem;
+  color: #4b5563;
+  /* color: #000; */
+  line-height: 1.6;
+}
+
+
+.value-card:hover .value-icon{
+  display: none;
+  /* transition: 0.5s; */
+}
+
+
+@media (max-width: 360px){
+
+  .core-values-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .core-values-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (min-width: 361px) and (max-width: 480px){
+
+  .core-values-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .core-values-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+
+  .core-values-section{
+    width: 100%;
+    padding: 5rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .core-values-grid{
+    width: 100%;
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr;
+    /* gap: 2rem; */
+  }
+
+  
+  .value-card .value-icon{
+    font-size: 5rem;
+  }
+  
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1024px){
+
+  .core-values-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .core-values-grid{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 2rem; */
+  }
+
+  .value-card{
+    padding: 0;
+    width: 100%;
+  }
+  .value-card .value-icon{
+    font-size: 5rem;
+  }
+
+  
+}
+

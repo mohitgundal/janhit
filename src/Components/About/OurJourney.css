@@ -1,0 +1,119 @@
+.journey-section {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.journey-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #22c55e;
+  margin-bottom: 1rem;
+}
+
+.scroll-hint {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .scroll-hint {
+    display: block;
+  }
+}
+
+.timeline-wrapper {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 3rem;
+  margin-top: 1.5rem;
+  cursor: grab;
+}
+
+.timeline-wrapper.dragging {
+  cursor: grabbing;
+}
+
+.timeline-wrapper::-webkit-scrollbar {
+  height: 0;
+}
+
+.timeline-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.timeline {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 1rem 1rem 0;
+  min-width: max-content;
+  position: relative;
+}
+
+.timeline-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background-color: #22c55e;
+  transition: width 0.4s ease-in-out;
+  z-index: 0;
+}
+
+.timeline-item {
+  position: relative;
+  flex: 0 0 auto;
+  width: 280px;
+  padding: 1.5rem;
+  background: #f0fdf4;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: all 0.6s ease-out;
+  z-index: 1;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.timeline-year {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #16a34a;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Peeking effect */
+.timeline::after {
+  content: "";
+  width: 60px;
+  flex-shrink: 0;
+}

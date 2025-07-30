@@ -1,0 +1,95 @@
+.business {
+  margin-top: 18vh;
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+/* Component Number 5 */
+/* .earnings-potential {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.earnings-potential h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #1c1c1c;
+}
+
+.earnings-potential .highlight {
+  color: #22c55e;
+  font-size: 3rem;
+}
+
+.earnings-potential .subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.earnings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.earning-card {
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.earning-card:hover {
+  transform: translateY(-5px);
+}
+
+.earning-card h3 {
+  font-size: 1.8rem;
+  color: #22c55e;
+  margin-bottom: 15px;
+}
+
+.earning-card p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 8px;
+} */
+
+
+
+
+
+
+
+/* WhatsApp Floating Button */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  padding: 14px;
+  border-radius: 50%;
+  font-size: 24px;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+  background-color: #1ebe5b;
+}
+
+
+
+
+
+
+
+
