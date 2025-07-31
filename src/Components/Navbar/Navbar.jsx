@@ -11,7 +11,7 @@ const NAV_ITEMS = [
   { name: "Products", route: "/products", scrollId: "productsTop" },
   { name: "Presence", route: "/presence", scrollId: "presenceTop" },
   { name: "Business", route: "/business-opportunity", scrollId: "businessTop" },
-  { name: "Careers", route: "/careers", scrollId: "careersTop" },
+  { name: "Career", route: "/careers", scrollId: "careersTop" },
 ];
 
 const Navbar = () => {

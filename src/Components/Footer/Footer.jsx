@@ -1,5 +1,7 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
@@ -9,6 +11,19 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
+
+  const navigate = useNavigate();
+
+    const handleNav = (route, targetId) => {
+    navigate(route);
+    setTimeout(() => {
+      const el = document.getElementById(targetId);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100); // Match the Navbar delay
+  };
+  
   return (
     <footer className="business-footer">
       <div className="footer-container">
@@ -19,16 +34,30 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="footer-section links">
+        {/* <div className="footer-section links">
           <h4>Quick Links</h4>
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
+            <li><a href="/product">Products</a></li>
+            <li><a href="/presence">Presence</a></li>
             <li><a href="/business">Business</a></li>
-            <li><a href="/faqs">FAQs</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/career">Career</a></li>
           </ul>
-        </div>
+        </div> */}
+
+        <div className="footer-section links">
+  <h4>Quick Links</h4>
+  <ul>
+    <li><Link to="/">Home</Link></li>
+    <li><Link to="/about">About</Link></li>
+    <li><Link to="/product">Products</Link></li>
+    <li><Link to="/presence">Presence</Link></li>
+    <li><Link to="/business-opportunity">Business</Link></li>
+    <li><Link to="/careers">Career</Link></li>
+  </ul>
+</div>
+
 
         <div className="footer-section contact">
           <h4>Contact</h4>
