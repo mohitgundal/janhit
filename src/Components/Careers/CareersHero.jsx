@@ -11,7 +11,7 @@ const CareersHero = () => {
   };
 
   return (
-    <section className="careers-hero">
+    <section id="careersTop" className="careers-hero scroll-offset">
       <img
         src={career_img_1}
         alt="Careers at Janhit Chemist"

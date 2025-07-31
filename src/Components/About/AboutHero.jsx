@@ -12,8 +12,8 @@ const AboutHero = () => {
   };
 
   return (
-    <section
-      className="about-hero"
+    <section id="aboutTop"
+      className="about-hero scroll-offset"
       style={{ backgroundImage: `url(${about_hero})` }}
     >
       <div className="about-overlay">

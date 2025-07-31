@@ -36,8 +36,8 @@ const App = () => {
   }, []);
   return (
     <Router basename="/janhit">
-      {/* <ScrollToTop />
-      <ScrollToHash/> */}
+      {/* <ScrollToTop /> */}
+      {/* <ScrollToHash/> */}
       <Navbar />
 
       <FloatingWhatsApp/>

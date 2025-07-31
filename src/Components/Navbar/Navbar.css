@@ -1,3 +1,4 @@
+/* ---------- MAIN NAVBAR STYLES ---------- */
 .navbar {
   width: 100%;
   height: 18vh;
@@ -15,48 +16,53 @@
   width: 170px;
 }
 
+/* ---------- DESKTOP MENU ---------- */
 .navbar ul {
   list-style: none;
   display: flex;
-  /* text-align: center; */
 }
 
-.navbar ul li{
+.navbar ul li {
   width: auto;
   text-align: center;
 }
 
-.navbar li a {
+/* Buttons instead of <a> */
+.nav-link-button {
   text-decoration: none;
   padding: 0px 25px;
   font-size: 20px;
   color: #000;
   text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
-.navbar li a:hover {
+.nav-link-button:hover {
   color: rgb(2, 194, 130);
 }
 
-.ham-menu{
+/* ---------- HAMBURGER MENU ---------- */
+.ham-menu {
   display: none;
 }
 
-
-@media screen and (max-width: 480px){
-
-  .navbar img{
+/* ---------- MOBILE STYLES ---------- */
+@media screen and (max-width: 480px) {
+  .navbar img {
     margin-left: 10vw !important;
   }
 
-  .ham-menu{
+  .ham-menu {
     margin-right: 12vw !important;
     display: block;
     width: 3rem !important;
-    height: 3rem !important; 
+    height: 3rem !important;
   }
-  
-  .ham-menu button{
+
+  .ham-menu button {
     padding-top: 0.3rem !important;
     width: 100%;
     height: 100%;
@@ -64,34 +70,33 @@
     border: none;
     font-size: 2.5rem !important;
     border-radius: 0.5rem;
-   }
+  }
 }
 
-
-@media (max-width: 990px){
-
-  .navbar{
+@media (max-width: 990px) {
+  .navbar {
     height: 18vh;
     display: flex;
     justify-content: space-between;
   }
-  .navbar img{
+
+  .navbar img {
     width: 30vw;
     margin-left: 10vw;
   }
 
-  .navbar ul{
+  .navbar ul {
     display: none;
   }
 
-   .ham-menu{
+  .ham-menu {
     margin-right: 15vw;
     display: block;
     width: 4rem;
     height: 4rem;
   }
-  
-  .ham-menu button{
+
+  .ham-menu button {
     padding-top: 0.4rem;
     width: 100%;
     height: 100%;
@@ -99,29 +104,33 @@
     border: none;
     font-size: 3rem;
     border-radius: 0.5rem;
-   }
+  }
 
-   .menu-web{
+  .menu-web {
     display: none;
-   }
+  }
 
-   .menu-mobile{
+  .menu-mobile {
     position: absolute;
     top: 10rem;
     left: 0;
     background-color: #ffffff;
     width: 100%;
-   }
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
 
-   .menu-mobile ul{
+  .menu-mobile ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-   }
+  }
 
-   .menu-mobile ul li{
+  .menu-mobile ul li {
     padding: 1rem;
-   }
-   
-   
+  }
+
+  .menu-mobile .nav-link-button {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
 }

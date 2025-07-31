@@ -4,7 +4,7 @@ import business_img_1 from "../../assets/business_opp_1.jpg";
 
 const BusinessHero = ({ scrollToForm }) => {
   return (
-    <section className="business-landing-page">
+    <section id="businessTop" className="business-landing-page scroll-offset">
       <div className="landing-image">
         <img src={business_img_1} alt="" />
       </div>

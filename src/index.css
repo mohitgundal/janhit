@@ -11,3 +11,14 @@ html, body {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+
+/* #page-top {
+  scroll-margin-top: 18vh;  */
+  /* Adjust this to match your fixed navbar height */
+/* } */
+
+.scroll-offset {
+  scroll-margin-top: 18vh; /* Equal to your navbar height */
+}
+

@@ -11,7 +11,7 @@ const PresenceHero = () => {
     }
   };
   return (
-    <section className="presence-hero-section">
+    <section id="presenceTop" className="presence-hero-section scroll-offset">
       <img src={mumbaiMap} alt="Map of Mumbai" className="presence-bg-image" />
       <div className="presence-overlay"></div>
 
