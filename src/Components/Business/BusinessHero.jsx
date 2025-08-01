@@ -17,7 +17,10 @@ const BusinessHero = ({ scrollToForm }) => {
           Be a part of India’s growing healthcare revolution. Start your
           profitable medical business today.
         </p>
-        <button onClick={scrollToForm}>Apply Now</button>
+        {/* <button onClick={scrollToForm}>Apply Now</button> */}
+        <button className="apply-button" onClick={scrollToForm}>
+          Apply Now
+        </button>
       </div>
     </section>
   );
