@@ -26,6 +26,7 @@
   backdrop-filter: blur(6px);
   border-radius: 1rem;
   padding: 1.5rem;
+  margin: auto;
   /* box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08); */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
